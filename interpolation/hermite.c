@@ -254,8 +254,8 @@ Inputs: state - workspace
 
 Notes:
 
-1) On output, the array w->q contains the divided difference
-polynomial coefficients, and w->z contains the z array values
+1) On output, the array state->q contains the divided difference
+polynomial coefficients, and state->z contains the z array values
 (see [1])
 
 2) only cubic interpolation is currently supported

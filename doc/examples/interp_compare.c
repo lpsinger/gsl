@@ -29,11 +29,13 @@ main(void)
   gsl_spline_init(spline_akima, x, y, N);
   gsl_spline_init(spline_steffen, x, y, N);
 
+  /* print the data */
   for (i = 0; i < N; ++i)
     printf("%g %g\n", x[i], y[i]);
 
   printf("\n\n");
 
+  /* print the interpolating curves */
   for (i = 0; i <= 100; ++i)
     {
       double xi = (1 - i / 100.0) * x[0] + (i / 100.0) * x[N-1];

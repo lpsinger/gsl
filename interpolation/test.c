@@ -1205,6 +1205,14 @@ test_steffen2 (void)
   return s;
 }
 
+static int
+test_hermite (void)
+{
+  int s;
+
+  return s;
+}
+
 int 
 main (int argc, char **argv)
 {
@@ -1226,6 +1234,7 @@ main (int argc, char **argv)
   status += test_akima();
   status += test_steffen1();
   status += test_steffen2();
+  status += test_hermite();
 
   status += test_interp2d_main();
 

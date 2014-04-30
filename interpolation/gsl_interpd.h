@@ -21,7 +21,7 @@
 #define __GSL_INTERPD_H__
 
 #include <stdlib.h>
-#include <gsl/gsl_inline.h>
+#include <gsl/gsl_interp.h>
 #include <gsl/gsl_types.h>
 
 #undef __BEGIN_DECLS
@@ -61,6 +61,7 @@ typedef struct {
 
 /* available types */
 GSL_VAR const gsl_interpd_type * gsl_interpd_hermite;
+GSL_VAR const gsl_interpd_type * gsl_interpd_chermite;
 
 gsl_interpd *gsl_interpd_alloc(const gsl_interpd_type * T, const size_t n);
      
